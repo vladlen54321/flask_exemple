@@ -32,7 +32,7 @@ def requirements():
 @app.route('/generate_users')
 def generate_users():
     users = request.args.get('users') or '50'
-
+    print(3424)
     if users.isdigit():
         users = int(users)
         max_user = 200
